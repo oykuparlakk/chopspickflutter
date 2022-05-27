@@ -153,13 +153,17 @@ Widget signIn() => Row(
     );
 
 Widget socialMedia() => Center(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(height: 40, width: 40, child: getStartedImageGoogle()),
-          SizedBox(height: 40, width: 40, child: getStartedImageTwitter()),
-          SizedBox(height: 40, width: 40, child: getStartedImageFacebook()),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('asset/images/Twitter_bird_logo_2012.png'),
+            SizedBox(height: 40, width: 40, child: getStartedImageGoogle()),
+            SizedBox(height: 40, width: 40, child: getStartedImageTwitter()),
+            SizedBox(height: 40, width: 40, child: getStartedImageFacebook()),
+          ],
+        ),
       ),
     );
 
