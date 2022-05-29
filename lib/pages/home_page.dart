@@ -17,13 +17,13 @@ class _HomePageState extends State<HomePage> {
         color: Colors.white.withOpacity(0.2),
         overflowRules: const OverflowRules.all(true),
         child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0xFFD11770), Color(0xFF644AB5)],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomLeft,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFFD11770), Color(0xFF644AB5)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomLeft,
+              ),
             ),
-          ),
           child: Column(
             children: [
               Container(

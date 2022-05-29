@@ -157,11 +157,11 @@ Widget socialMedia() => Center(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset('assets/images/facebook.png'),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Image.asset('assets/images/Twitter_bird_logo_2012 1.png'),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Image.asset('assets/images/985_google_g_icon 1.png')
