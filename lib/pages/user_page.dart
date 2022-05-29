@@ -13,68 +13,73 @@ class _UserPageState extends State<UserPage> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 230, 241),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-              //greetings row
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  greetings(),
-                  //notification
-                  greetingsNotifications(),
-                ],
-              ),
-              const SizedBox(height: 20),
-              //search bar
-              searchBar(),
-              const SizedBox(height: 15),
-              foodsFilter(),
-              const SizedBox(height: 25),
-              Row(
-                children: [
-                  const Text(
-                    'Promotions',
-                    style: TextStyle(
-                        fontSize: 25,
-                        color: Color.fromARGB(255, 115, 114, 114)),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 15),
-              Center(
-                child: Stack(
+        child: Center(
+          child: ListView(children: [
+            Column(
+              children: [
+                //greetings row
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      width: 400,
-                      height: 170,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        gradient: LinearGradient(
-                          colors: [
-                            Color.fromARGB(255, 219, 160, 185),
-                            Color.fromARGB(255, 236, 115, 174)
-                          ],
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomLeft,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      right: 0,
-                      top: -10,
-                      child: Container(
-                        width: 100,
-                        height: 80,
-                        color: Colors.blue,
-                      ),
+                    greetings(),
+                    //notification
+                    greetingsNotifications(),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                //search bar
+                searchBar(),
+                const SizedBox(height: 15),
+                foodsFilter(),
+                const SizedBox(height: 25),
+                Row(
+                  children: [
+                    const Text(
+                      'Promotions',
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Color.fromARGB(255, 115, 114, 114)),
                     ),
                   ],
                 ),
-              )
-            ],
-          ),
+                const SizedBox(height: 15),
+                Center(
+                  child: Stack(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
+                        width: 400,
+                        height: 170,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          gradient: LinearGradient(
+                            colors: [
+                              Color.fromARGB(255, 219, 160, 185),
+                              Color.fromARGB(255, 236, 115, 174)
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomLeft,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        right: 0,
+                        top: -20,
+                        child: Container(
+                          margin: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(10),
+                          width: 100,
+                          height: 80,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ]),
         ),
       ),
     );
@@ -102,6 +107,8 @@ Widget greetings() => Column(
 Widget foodsFilter() => Row(
       children: [
         Container(
+          margin: EdgeInsets.all(5),
+          padding: EdgeInsets.all(5),
           decoration: BoxDecoration(
             color: Color.fromARGB(255, 240, 175, 203),
             borderRadius: BorderRadius.circular(16),
