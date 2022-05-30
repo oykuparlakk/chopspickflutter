@@ -1,3 +1,5 @@
+import 'package:chopspickflutter/pages/basket_page.dart';
+import 'package:chopspickflutter/pages/food_page.dart';
 import 'package:chopspickflutter/pages/login_page.dart';
 import 'package:chopspickflutter/pages/user_page.dart';
 import 'package:flutter/material.dart';
