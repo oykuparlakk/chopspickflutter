@@ -1,7 +1,5 @@
-import 'package:chopspickflutter/pages/basket_page.dart';
-import 'package:chopspickflutter/pages/food_page.dart';
-import 'package:chopspickflutter/pages/login_page.dart';
-import 'package:chopspickflutter/pages/user_page.dart';
+
+import 'package:chopspickflutter/views/login/login_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UserPage(),
+      home: Login(),
     );
   }
 }
